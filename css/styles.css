@@ -9,5 +9,21 @@ p {
 }
 
 /*********************CLASS SELECTORS***********************/
+.table-education .period {
+    width: 10%;
+}
+
+.table-education .description {
+    width: 80%;
+}
+
+.table-education .end {
+    width: 10%;
+}
+
+.table-education {
+    border-collapse:separate;
+    border-spacing:0 7px;
+}
 
 /*********************ID SELECTORS***********************/
