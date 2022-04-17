@@ -18,7 +18,7 @@ p {
 }
 
 .table-education .end {
-    width: 10%;
+    width: 8%;
 }
 
 .table-education {
@@ -27,3 +27,6 @@ p {
 }
 
 /*********************ID SELECTORS***********************/
+#bio {
+    margin-right: 500px;
+}
