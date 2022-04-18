@@ -10,6 +10,7 @@ p {
 
 /*********************CLASS SELECTORS***********************/
 .table-education .period {
+    vertical-align: top;
     width: 10%;
 }
 
