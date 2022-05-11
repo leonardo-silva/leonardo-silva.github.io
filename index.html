@@ -7,10 +7,55 @@
     <meta name="description" 
         content="Web Personal Page of Professor Leonardo Humberto Silva"> 
     <title>Leonardo's Personal Site</title>
+    <!-- Bootstrap link must come before our custom styles.css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="row header">
+        <div class="col-lg-2">
+            <img id="profile-picture"
+                src="images/Profile23Oct2020-reduced-circle.png"
+                alt="Leonardo's profile picture"
+            />
+        </div>
+        <div class="col-lg-6 header-short-description">
+            <h2>Leonardo Silva</h2>
+            <h4><em>Software Engineer and Professor</em></h4>
+            <p id="bio">PhD in Computer Science.  
+                Experience in Software Engineering, Systems Development, 
+                acting mainly on: 
+                OO best practices, Web and Mobile Apps, Agile Methods.</p>
+        </div>
+        <div class="col-lg-3">
+            <a href="" id="contactme-link">CONTACT ME</a>
+            <div id="contactme-images">
+                <img class="contactme-logo"
+                    src="images/github_PNG83.png" 
+                    alt="GitHub Logo"
+                />
+                <img class="contactme-logo"
+                    src="images/Twitter-new-logo.png" 
+                    alt="Twitter Logo"
+                />
+                <img class="contactme-logo"
+                    src="images/linkedin-social-icon-svg.png" 
+                    alt="LinkedIn Logo"
+                />
+                <img class="contactme-logo"
+                    src="images/Lattes.png" 
+                    alt="Lattes Platform Logo"
+                />
+            </div>
+        </div>
+    </div>
+    <!-- 
     <table cellspacing="20">
         <tr>
             <td>
@@ -29,6 +74,7 @@
             </td>
         </tr>
     </table>
+     -->
     <hr>
     <h3>Education</h3>
     <table class="table-education">

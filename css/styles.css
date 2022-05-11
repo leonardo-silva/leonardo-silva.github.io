@@ -3,12 +3,40 @@ body {
     background-color: #EAF6F6;
 }
 
+h2 {
+    font-family: 'Montserrat',serif;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: 'Montserrat',serif;
+}
+
 p {
+    font-family: 'Montserrat',serif;
+    font-size: 1rem;
     line-height: 1.2;
     text-align: justify;
 }
 
 /*********************CLASS SELECTORS***********************/
+.contactme-logo {
+    background-color: #EAF6F6;
+    height: 30px;
+    margin-left: 20px;
+    width: 30px;
+}
+
+.header {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header-short-description {
+    padding-top: 20px;
+    margin: auto 35px auto 35px;
+}
+
 .table-education .period {
     vertical-align: top;
     width: 10%;
@@ -29,5 +57,25 @@ p {
 
 /*********************ID SELECTORS***********************/
 #bio {
-    margin-right: 500px;
+    display: inline-block;
+}
+
+#contactme-link {
+    display: block;
+    font-family: 'Ubuntu', serif;
+    font-size: 0.9rem;
+
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#contactme-images {
+    text-align: center;
+}
+
+#profile-picture {
+    height: 195px;
+    width: 195px;
 }
