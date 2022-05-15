@@ -36,6 +36,14 @@ p {
     margin: auto 35px auto 35px;
 }
 
+.nav-item {
+    font-family: 'Koulen', cursive;
+    font-size: 1.125rem;
+    letter-spacing: 1.2px;
+    line-height: 1;
+    text-align: center;
+}
+
 .table-education .period {
     vertical-align: top;
     width: 10%;
@@ -55,9 +63,9 @@ p {
 }
 
 /*********************ID SELECTORS***********************/
-#bio {
+/* #bio {
     display: inline-block;
-}
+} */
 
 #contactme-link {
     display: block;
