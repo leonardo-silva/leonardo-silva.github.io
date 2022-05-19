@@ -23,8 +23,19 @@ p {
 .contactme-logo {
     background-color: #EAF6F6;
     height: 30px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     width: 30px;
+}
+
+.contactme-logo:hover {
+    color: #348754;
+}
+
+.contactme-table {
+    /* align-items: center; */
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .container-fluid {
@@ -80,11 +91,11 @@ p {
 }
 
 #contactme-link:hover {
-    color: blue;
+    color: #348754;
 }
 
 #contactme-images {
-    text-align: center;
+    padding: 0 1rem;
 }
 
 #profile-picture {
