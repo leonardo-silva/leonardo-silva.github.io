@@ -22,8 +22,10 @@ p {
 /*********************CLASS SELECTORS***********************/
 .contactme-logo {
     background-color: #EAF6F6;
+    color: black;
     height: 30px;
-    /* margin-left: 20px; */
+    text-decoration: none;
+    margin: 0 10px; 
     width: 30px;
 }
 
@@ -74,9 +76,6 @@ p {
 }
 
 /*********************ID SELECTORS***********************/
-/* #bio {
-    display: inline-block;
-} */
 
 #contactme-link {
     display: block;
@@ -96,6 +95,16 @@ p {
 
 #contactme-images {
     padding: 0 1rem;
+    text-align: center;
+}
+
+#ifnmg-link {
+    color: #2A3A35;
+    text-decoration: none; 
+}
+
+#ifnmg-link:hover {
+    color: #348754;
 }
 
 #profile-picture {
