@@ -60,6 +60,14 @@ section {
     margin: auto 35px auto 35px;
 }
 
+.links {
+    color: black;
+}
+
+.links:hover {
+    color: #348754;
+}
+
 .nav-item {
     font-family: 'Koulen', cursive;
     font-size: 1.125rem;
