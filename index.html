@@ -22,38 +22,40 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-2">
-                <img id="profile-picture"
-                    src="images/Profile23Oct2020-reduced-circle.png"
-                    alt="Leonardo's profile picture"
-                />
-            </div>
-            <div class="col-lg-6 header-short-description">
-                <h2>Leonardo Silva</h2>
-                <h4><em>Software Engineer and Professor at <a id="ifnmg-link" href="https://www.ifnmg.edu.br/salinas">IFNMG</a></em></h4>
-                <p id="bio">Ph.D. in Computer Science.  
-                    Experience in Software Engineering, Systems Development, 
-                    acting mainly on: 
-                    OO best practices, Web and Mobile Apps, and Agile Methods.</p>
-            </div>
-            <div class="col-lg-3">
-                <a href="" id="contactme-link">CONTACT ME</a>
-                <div id="contactme-images">
-                    <!-- <img class="contactme-logo"
-                        src="images/github_PNG83.png" 
-                        alt="GitHub Logo"
-                    /> -->
-                    <a class="fab fa-github fa-2x contactme-logo" href="https://github.com/leonardo-silva"></a>
-                    <a class="fab fa-twitter fa-2x contactme-logo" href="https://twitter.com/LeoHumbSilva"></a>
-                    <a class="fab fa-linkedin fa-2x contactme-logo" href="https://www.linkedin.com/in/leonardo-silva-926bb25b/"></a>
-                    <a class="ai ai-lattes ai-2x contactme-logo" href="http://lattes.cnpq.br/6697814933891299"></a>
+    <section id="header-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-sm-4">
+                    <img id="profile-picture"
+                        src="images/Profile23Oct2020-reduced-circle.png"
+                        alt="Leonardo's profile picture"
+                    />
+                </div>
+                <div class="col-lg-6 col-sm-8 header-short-description">
+                    <h2>Leonardo Silva</h2>
+                    <h4><em>Software Engineer and Professor at <a id="ifnmg-link" href="https://www.ifnmg.edu.br/salinas">IFNMG</a></em></h4>
+                    <p id="bio">Ph.D. in Computer Science.  
+                        Experience in Software Engineering, Systems Development, 
+                        acting mainly on: 
+                        OO best practices, Web and Mobile Apps, and Agile Methods.</p>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" id="contactme-link">CONTACT ME</a>
+                    <div id="contactme-images">
+                        <!-- <img class="contactme-logo"
+                            src="images/github_PNG83.png" 
+                            alt="GitHub Logo"
+                        /> -->
+                        <a class="fab fa-github fa-2x contactme-logo" href="https://github.com/leonardo-silva"></a>
+                        <a class="fab fa-twitter fa-2x contactme-logo" href="https://twitter.com/LeoHumbSilva"></a>
+                        <a class="fab fa-linkedin fa-2x contactme-logo" href="https://www.linkedin.com/in/leonardo-silva-926bb25b/"></a>
+                        <a class="ai ai-lattes ai-2x contactme-logo" href="http://lattes.cnpq.br/6697814933891299"></a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>    
+        </div>   
+    </section> 
 
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
@@ -183,12 +185,47 @@
             <span class="certificate-description"><strong>Scrum Fundamentals Certified – SFC</strong> 
                 by <a href="https://www.scrumstudy.com">SCRUMStudy</a></span>
             <img 
-                class="certificate-picture"
+                id="certificate-scrum-picture"
                 src="images/certificate_SFC_Leonardo Silva.png"
                 alt="Leonardo's scrum certificate picture"
             />
         </div>
 
+        <!-- The Modal -->
+        <div id="myCertificateModal" class="modal">
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+        
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+        
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myCertificateModal");
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("certificate-scrum-picture");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+        </script>
+            
     </section>
 
     <hr>

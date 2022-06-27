@@ -30,24 +30,44 @@ section {
     padding: 1%;
 }
 
-/*********************CLASS SELECTORS***********************/
-.certificate-container {
-    flex-direction: row;
-    gap: 20px;
-    justify-content: space-between;
-    padding: 0 1%;
-    width: 80%;
+th, td {
+    padding: 10px;
 }
 
-.certificate-description {
-    margin: 0 20px;
-}
+/********************* HEADER Section ***********************/
+#contactme-link {
+    display: block;
+    font-family: 'Koulen', cursive;
+    font-size: 1.1rem;
+    color: black;
 
-.certificate-picture {
-    height: 100%;
-    max-height: 80px;
-    max-width: 100px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
     width: 100%;
+}
+
+#contactme-link:hover {
+    color: #348754;
+}
+
+#contactme-images {
+    padding: 0 1rem;
+    text-align: center;
+}
+
+#ifnmg-link {
+    color: #2A3A35;
+    text-decoration: none; 
+}
+
+#ifnmg-link:hover {
+    color: #348754;
+}
+
+#profile-picture {
+    height: 195px;
+    width: 195px;
 }
 
 .contactme-logo {
@@ -87,6 +107,8 @@ section {
     color: #348754;
 }
 
+/********************* NAVBAR ***********************/
+
 .nav-item {
     font-family: 'Koulen', cursive;
     font-size: 1.125rem;
@@ -95,9 +117,7 @@ section {
     text-align: center;
 }
 
-.section-separator {
-    text-align: center;
-}
+/********************* SKILLS Section ***********************/
 
 .skill-img-right {
     float: right;
@@ -118,11 +138,7 @@ section {
     width: 65%;
 }
 
-.table-certificates .period {
-    padding-right: 50px;
-    vertical-align: top;
-    width: 10%;
-}
+/********************* EDUCATION Section ***********************/
 
 .table-education .period {
     vertical-align: top;
@@ -142,39 +158,108 @@ section {
     border-spacing:0 7px;
 }
 
-/*********************ID SELECTORS***********************/
+/********************* CERTIFICATES Section ***********************/
 
-#contactme-link {
-    display: block;
-    font-family: 'Koulen', cursive;
-    font-size: 1.1rem;
-    color: black;
-
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
+#certificate-scrum-picture {
+    height: 100%;
+    max-height: 80px;
+    max-width: 100px;
     width: 100%;
+
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-#contactme-link:hover {
-    color: #348754;
+#certificate-scrum-picture:hover {
+    opacity: 0.7;
 }
 
-#contactme-images {
-    padding: 0 1rem;
+.certificate-container {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 1%;
+    width: 80%;
+}
+
+.certificate-description {
+    margin: 0 20px;
+}
+
+.table-certificates .period {
+    padding-right: 50px;
+    vertical-align: top;
+    width: 10%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+  
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
     text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
 }
-
-#ifnmg-link {
-    color: #2A3A35;
-    text-decoration: none; 
+  
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
-
-#ifnmg-link:hover {
-    color: #348754;
+  
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
 }
-
-#profile-picture {
-    height: 195px;
-    width: 195px;
+  
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
 }
