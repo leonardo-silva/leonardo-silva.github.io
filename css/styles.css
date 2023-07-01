@@ -169,6 +169,12 @@ th, td {
     text-align: left;
 }
 
+.publication-h4 {
+    line-height: 2;
+    margin: 10px auto 2px;
+    text-align: left;
+}
+
 /********************* CERTIFICATES Section ***********************/
 
 #certificate-scrum-picture {
