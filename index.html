@@ -7,7 +7,7 @@
     <meta name="description" 
         content="Web Personal Page of Professor Leonardo Humberto Silva"> 
     <title>Leonardo's Personal Site</title>
-    
+
     <!-- Normalize CSS  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -328,7 +328,11 @@
     <!-- Projects -->
 
     <section id="projects-section">
-        <h3 class="projects-h3">Projects</h3>
+        <div class="projects-header">
+            <img class="projects-img" src="./images/underConstruction.png" alt="Under construction image">
+            <h3 class="projects-h3">Projects</h3>
+            <img class="projects-img" src="./images/underConstruction.png" alt="Under construction image">
+        </div>
 
         <div id="carouselExampleControls" 
             class="carousel slide" 
@@ -367,7 +371,40 @@
     <!-- Languages -->
 
     <section id="languages-section">
-        <h3>Languages</h3>
+        <h3 class="language-h3">Languages</h3>
+        <table class="table-languages">
+            <tr>
+                <td class="language">Portuguese</td>
+                <td class="description">Mother Language.
+                </td>
+                <td class="end"></td>
+            </tr>
+            <tr>
+                <td class="language">English</td>
+                <td class="description">Comprehends Well, Speaks Well, Reads Well, Writes Well.
+                </td>
+                <td class="end"></td>
+            </tr>
+            <tr>
+                <td class="language">French</td>
+                <td class="description">Comprehends Well, Speaks Reasonably, Reads Well, Writes Reasonably.
+                </td>
+                <td class="end"></td>
+            </tr>
+            <tr>
+                <td class="language">Spanish</td>
+                <td class="description">Comprehends Well, Speaks Reasonably, Reads Well, Writes Reasonably.
+                </td>
+                <td class="end"></td>
+            </tr>
+            <tr>
+                <td class="language">German</td>
+                <td class="description">Comprehends Little, Speaks Little, Reads Little, Writes Little.
+                </td>
+                <td class="end"></td>
+            </tr>
+        </table>
+
     </section>
 
     <hr>
@@ -377,6 +414,7 @@
     <section id="certificates-section">
 
         <h3>Certificates</h3>
+
         <div class="certificate-container">
             <span>2021</span>
             <span class="certificate-description"><strong>Scrum Fundamentals Certified – SFC</strong> 

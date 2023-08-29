@@ -437,12 +437,35 @@ th, td {
     text-align: center;
 }
 
+.projects-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.projects-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .carousel-control-prev {
     filter: invert(100%);
 }
 
 .carousel-control-next {
     filter: invert(100%);
+}
+
+/********************* LANGUAGES Section ***********************/
+
+.table-languages .language {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.language-h3 {
+    margin-bottom: 20px;
 }
 
 /********************* CERTIFICATES Section ***********************/
