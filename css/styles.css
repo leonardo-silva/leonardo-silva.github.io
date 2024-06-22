@@ -399,10 +399,9 @@ th, td {
 
 /********************* SKILLS Section ***********************/
 
-.skills-h3 {
-    /* font-family: 'Montserrat', sans-serif; */
+/* .skills-h3 {
     margin-left: 40px;
-}
+} */
 
 .skill-img-right {
     float: right;
@@ -457,6 +456,10 @@ th, td {
 }
 
 /********************* PROJECTS Section ***********************/
+
+.project-card-image {
+    background-color: #2A3A35;
+}
 
 .projects-h3 {
     margin-bottom: 25px;
