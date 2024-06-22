@@ -28,9 +28,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <!--Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- js -->
+    <script src="./js/utils.js"></script>
 </head>
 <body>
-    <section id="header-section">
+    <section id="header-section" class="gradient-background">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-2 col-sm-4">
@@ -40,7 +42,7 @@
                     />
                 </div>
                 <div class="col-lg-6 col-sm-8 header-short-description">
-                    <h2>Leonardo Humberto Silva</h2>
+                    <h2>Leonardo Humberto G. Silva</h2>
                     <h4><em>Software Engineer and Professor at <a id="ifnmg-link" href="https://www.ifnmg.edu.br/salinas">IFNMG</a></em></h4>
                     <p id="bio">Ph.D. in Computer Science.  
                         Experience in Software Engineering, Systems Development, 
@@ -68,7 +70,7 @@
     </section> 
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="">&lt;/&gt;</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -81,9 +83,9 @@
                 <li class="nav-item me-2">
                     <a class="nav-link" href="#education-section">Formal Education</a>
                 </li>
-                <li class="nav-item me-2">
+                <!-- <li class="nav-item me-2">
                     <a class="nav-link" href="#skills-section">Skills</a>
-                </li>
+                </li> -->
                 <li class="nav-item me-2">
                     <a class="nav-link" href="#projects-section">Projects</a>
                 </li>
@@ -238,7 +240,7 @@
     <!-- Formal Education -->
 
     <section id="education-section">
-
+      <div class="container">
         <h3>Formal Education</h3>
         <table class="table-education">
             <tr>
@@ -277,73 +279,212 @@
                 <td class="end"></td>
             </tr>
         </table>
-
+      </div>  
     </section>
 
     <hr>
 
     <!-- Skills -->
 
-    <section id="skills-section">
-        <h3 class="skills-h3"><strong>Some Technical Skills</strong></h3>
-        <div class="skills">
-            <div class="skill-row">
-                <img class="skill-img-left" src="images/software-development-icon-nobackg.png" alt="Software Development icon">
-                <h3>Software Development</h3>
-                <p>Fullstack software engineer.
-                    Over twenty years of experience in Software Engineering, Database and Information Systems Development. My first job was as a Clipper Programmer, some time ago... 😉.</p>
-            </div>
-            <div class="skill-row">
-                <img class="skill-img-right" src="images/React-icon200x172.png" alt="React Native icon">
-                <h3>React Native</h3>
-                <p>Framework I currently use for multi-platform mobile development. I moved from Android (Java) to React Native apps for two main reasons: (a) also meet the demands of iOS users, and (b) because I ❤️  the <strong>RN + TS + Expo</strong> triad!</p>
-            </div>
-            <div class="skill-row">
-                <img class="skill-img-left" src="images/java-icon200x200.png" alt="Java icon">
-                <h3>Java</h3>
-                <p>I frequently use it as a Professor. I started using Java in 2006, when AOP was the new hype, and ever since I've been using it in academic research and also to teach Object-Oriented Programming and <strong>design patterns</strong> to new devs. </p>
-            </div>
-            <div class="skill-row">
-                <img class="skill-img-right" src="images/js-logo.png" alt="JavaScript logo">
-                <h3>JavaScript</h3>
-                <p>I studied exhaustively JavaScript Object Prototype for my Ph.D. dissertation 📚, which was about the identification of class structures in JavaScript legacy code. I have also contributed to some open source JS projects, such as <a class="links" href="https://github.com/pixijs/pixijs">pixijs</a>!</p>
-            </div>
-            <div class="skill-row">
-                <img class="skill-img-left" src="images/agile-methodology.png" alt="Agile methodology logo">
-                <h3>Agile Methods</h3>
-                <p>I teach a subject about Agile Methods ♻ in an Information Systems undergraduate course. I also use the combination of <strong>JIRA + Scrum</strong> template in my practical assignments and projects.</p>
-            </div>
-            <div class="skill-row">
-                <img class="skill-img-right" src="images/idea_creative_hypothesis_icon.png" alt="Innovation logo">
-                <h3>Innovation</h3>
-                <p>I coordinate a newly born junior enterprise 🏭 at IFNMG, called <a class="links" href="https://sifsoft.github.io/Site/">SIFSoft</a>, which is made up of undergraduate students. I am responsible for mentoring the team, making sure the company is running accordingly to the Junior Company Regulations of the
-                institution.</p>
-            </div>
+    <!-- <section id="skills-section">
+      <div class="skills ">
+        <div class="skill-row">
+          <h3 class="skills-h3"><strong>Some Technical Skills</strong></h3>
         </div>
+        <div class="skill-row">
+            <img class="skill-img-left" src="images/software-development-icon-nobackg.png" alt="Software Development icon">
+            <h3>Software Development</h3>
+            <p>Fullstack software engineer.
+                Over twenty years of experience in Software Engineering, Database and Information Systems Development. My first job was as a Clipper Programmer, some time ago... 😉.</p>
+        </div>
+        <div class="skill-row">
+            <img class="skill-img-right" src="images/React-icon200x172.png" alt="React Native icon">
+            <h3>React Native</h3>
+            <p>Framework I currently use for multi-platform mobile development. I moved from Android (Java) to React Native apps for two main reasons: (a) also meet the demands of iOS users, and (b) because I ❤️  the <strong>RN + TS + Expo</strong> triad!</p>
+        </div>
+        <div class="skill-row">
+            <img class="skill-img-left" src="images/java-icon200x200.png" alt="Java icon">
+            <h3>Java</h3>
+            <p>I frequently use it as a Professor. I started using Java in 2006, when AOP was the new hype, and ever since I've been using it in academic research and also to teach Object-Oriented Programming and <strong>design patterns</strong> to new devs. </p>
+        </div>
+        <div class="skill-row">
+            <img class="skill-img-right" src="images/js-logo.png" alt="JavaScript logo">
+            <h3>JavaScript</h3>
+            <p>I studied exhaustively JavaScript Object Prototype for my Ph.D. dissertation 📚, which was about the identification of class structures in JavaScript legacy code. I have also contributed to some open source JS projects, such as <a class="links" href="https://github.com/pixijs/pixijs">pixijs</a>!</p>
+        </div>
+        <div class="skill-row">
+            <img class="skill-img-left" src="images/agile-methodology.png" alt="Agile methodology logo">
+            <h3>Agile Methods</h3>
+            <p>I teach a subject about Agile Methods ♻ in an Information Systems undergraduate course. I also use the combination of <strong>JIRA + Scrum</strong> template in my practical assignments and projects.</p>
+        </div>
+        <div class="skill-row">
+            <img class="skill-img-right" src="images/idea_creative_hypothesis_icon.png" alt="Innovation logo">
+            <h3>Innovation</h3>
+            <p>I coordinate a newly born junior enterprise 🏭 at IFNMG, called <a class="links" href="https://sifsoft.github.io/Site/">SIFSoft</a>, which is made up of undergraduate students. I am responsible for mentoring the team, making sure the company is running accordingly to the Junior Company Regulations of the
+            institution.</p>
+        </div>
+      </div>
 
     </section>
 
-    <hr>
+    <hr> -->
 
     <!-- Projects -->
 
     <section id="projects-section">
-        <div class="projects-header">
-            <img class="projects-img" src="./images/underConstruction.png" alt="Under construction image">
-            <h3 class="projects-h3">Projects</h3>
-            <img class="projects-img" src="./images/underConstruction.png" alt="Under construction image">
-        </div>
-
-        <div id="carouselExampleControls" 
+        <!-- <div class="projects-header"></div> -->
+        
+        <div class="album pb-5 bg-body-tertiary">
+          <div class="container">
+            <h3 class="projects-h3 mb-5"><strong>Projects</strong></h3>
+        
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="px-5 border-bottom" src="./images/projetos-selo-1o-lugar-MG.png" alt="Selo digital de premiação" height="225">
+                    <div class="card-body">
+                      <p class="card-text">Promovendo a Educação Inovadora em Escolas Públicas com Conhecimento, Integração e Troca de Experiências.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="relocate_link('https://conteudo.significare.org.br/vencedores-etapa-estadual-2a-ed-premio-educador-transformador')">
+                            More
+                          </button>
+                        </div>
+                        <small class="text-body-secondary">2024 - completed</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                      <p class="card-text">Another project info will be added here soon.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-body-secondary">9 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                      <p class="card-text">Another project info will be added here soon.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-body-secondary">9 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                      <p class="card-text">Another project info will be added here soon.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-body-secondary">9 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                      <p class="card-text">Another project info will be added here soon.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-body-secondary">9 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                      <p class="card-text">Another project info will be added here soon.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-body-secondary">9 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-body-secondary">9 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-body-secondary">9 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-body-secondary">9 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <!-- <div id="carouselExampleControls" 
             class="carousel slide" 
             data-bs-ride="carousel"
             data-bs-interval="false"
         >
-            <!-- <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div> -->
             <div class="carousel-inner">
               <div class="carousel-item">
                 <h4 class="projects-h4">Proximus</h4>
@@ -363,7 +504,7 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </a>
-          </div>        
+          </div>         -->
     </section>
 
     <hr>
@@ -371,6 +512,7 @@
     <!-- Languages -->
 
     <section id="languages-section">
+      <div class="container">
         <h3 class="language-h3">Languages</h3>
         <table class="table-languages">
             <tr>
@@ -404,7 +546,7 @@
                 <td class="end"></td>
             </tr>
         </table>
-
+      </div>
     </section>
 
     <hr>
@@ -413,18 +555,29 @@
 
     <section id="certificates-section">
 
-        <h3>Certificates</h3>
+      <div class="container">
+        <h3>Certificates and Awards</h3>
 
         <div class="certificate-container">
-            <span>2021</span>
-            <span class="certificate-description"><strong>Scrum Fundamentals Certified – SFC</strong> 
-                by <a href="https://www.scrumstudy.com">SCRUMStudy</a></span>
+            <span>2024</span>
+            <span class="certificate-description"><strong>Prêmio Educador Transformador – 1<sup>o</sup> Lugar Etapa Estadual</strong> 
             <img 
                 id="certificate-scrum-picture"
-                src="images/certificate_SFC_Leonardo Silva.png"
-                alt="Leonardo's scrum certificate picture"
+                src="./images/projetos-selo-1o-lugar-MG.png"
+                alt="Selo digital, award certificate"
             />
         </div>
+
+        <div class="certificate-container">
+          <span>2021</span>
+          <span class="certificate-description"><strong>Scrum Fundamentals Certified – SFC</strong> 
+              by <a href="https://www.scrumstudy.com">SCRUMStudy</a></span>
+          <img 
+              id="certificate-scrum-picture"
+              src="images/certificate_SFC_Leonardo Silva.png"
+              alt="Leonardo's scrum certificate picture"
+          />
+      </div>
 
         <!-- The Modal -->
         <div id="myCertificateModal" class="modal">
@@ -460,7 +613,7 @@
               modal.style.display = "none";
             }
         </script>
-            
+      </div>      
     </section>
 
     <hr>

@@ -1,6 +1,32 @@
+/*********************COLOR SCHEMA***********************/
+:root {
+    --primary-color: #348754;
+    --background-color: #EAF6F6;
+    --background-var-color: #EEF7FF;
+}
+
+/*********************GRADIENTE BACKGROUND EFFECT***********************/
+.gradient-background {
+    background: linear-gradient(300deg, var(--primary-color), var(--background-var-color), var(--background-color));
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
 /*********************TAG SELECTORS***********************/
 body {
-    background-color: #EAF6F6;
+    background-color: var(--background-color);
 }
 
 h2 {
@@ -75,7 +101,7 @@ th, td {
 }
 
 .contactme-logo {
-    background-color: #EAF6F6;
+    /* background-color: #EAF6F6; */
     color: black;
     height: 30px;
     text-decoration: none;
@@ -359,6 +385,9 @@ th, td {
 
 
 /********************* NAVBAR ***********************/
+.navbar {
+    background-color: var(--primary-color);
+}
 
 .nav-item {
     font-family: 'Koulen', cursive;
@@ -370,10 +399,9 @@ th, td {
 
 /********************* SKILLS Section ***********************/
 
-.skills-h3 {
-    /* font-family: 'Montserrat', sans-serif; */
+/* .skills-h3 {
     margin-left: 40px;
-}
+} */
 
 .skill-img-right {
     float: right;
@@ -428,6 +456,10 @@ th, td {
 }
 
 /********************* PROJECTS Section ***********************/
+
+.project-card-image {
+    background-color: #2A3A35;
+}
 
 .projects-h3 {
     margin-bottom: 25px;
